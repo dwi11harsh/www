@@ -1,4 +1,4 @@
-import { Providers } from "@repo/ui";
+import { Providers, cn } from "@repo/ui";
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-      <body>{children}</body>
+      <body className={cn(
+        inter.className,
+        "bg-neutral-100 dark:bg-neutral-950 dark:text-neutral-400 text-lg font-normal text-neutral-700"
+      )}>
+        {children}
+      </body>
       </Providers>
     </html>
   );
