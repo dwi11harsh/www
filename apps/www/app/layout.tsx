@@ -1,4 +1,4 @@
-import { cn, Providers} from "@repo/ui";
+import { cn, Providers, Navbar } from "@repo/ui";
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -17,14 +17,17 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={cn(inter.className,
-        "bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-400 text-lg font-normal text-neutral-700"
-      )}>
+      <body
+        className={cn(
+          inter.className,
+          "min-h-screen min-w-screen text-lg font-normal bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-400 text-neutral-700",
+        )}
+      >
         <Providers>
+          <Navbar />
           {children}
         </Providers>
       </body>
-      
     </html>
   );
 }
