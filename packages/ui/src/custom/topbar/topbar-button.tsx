@@ -2,7 +2,7 @@
 
 import { cn } from "@repo/ui/lib/utils";
 import { CurrentTableAtom } from "@repo/ui/store";
-import { TopbarButtonOptions } from "@repo/ui/types";
+import { TopbarButtonOptions } from "@repo/ui";
 import { useAtomValue, useSetAtom } from "jotai";
 
 export const TopbarButton = ({

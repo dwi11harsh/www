@@ -3,3 +3,5 @@ export type TopbarButtonOptions =
   | "Play Log"
   | "Audience Data"
   | "Programming Assist";
+
+export type TableHeaderType = {};

@@ -7,7 +7,7 @@ export const Navbar = () => {
     <>
       <nav className="min-w-full bg-inherit dark:bg-inherit">
         <div className="py-4 mx-auto flex items-center justify-between">
-          <div className="pl-4">RADIOREACH</div>
+          <div className="pl-4 ">RADIOREACH</div>
           <div className="hidden md:block">
             <SelectRadioStation />
           </div>

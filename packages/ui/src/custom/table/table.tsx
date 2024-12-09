@@ -1,5 +1,6 @@
 import { DatePickerWithRange } from "@repo/ui/components/ui/date-range-picker";
 import { SearchBar } from "@repo/ui";
+import { TableHeader } from "./table-header";
 
 export const Table = () => {
   return (
@@ -10,7 +11,9 @@ export const Table = () => {
         <SearchBar />
       </div>
       {/* for table */}
-      <div></div>
+      <div>
+        <TableHeader />
+      </div>
     </div>
   );
 };

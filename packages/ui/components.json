@@ -15,6 +15,7 @@
     "ui": "@repo/ui/components/ui",
     "utils": "@repo/ui/lib/utils",
     "lib": "@repo/ui/lib",
-    "hooks": "@repo/ui/hooks"
+    "hooks": "@repo/ui/hooks",
+    "types": "@repo/ui/types"
   }
 }
