@@ -1,10 +1,8 @@
-"use client";
-
 import { Staticbar, Table, Topbar } from "@repo/ui";
-import { GetReceiverData } from "~/lib/get-data";
+import { GetPlayLogData } from "~/lib/get-data";
 
 export default function Page() {
-  GetReceiverData();
+  GetPlayLogData();
   return (
     <main>
       <Topbar />

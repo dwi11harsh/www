@@ -4,4 +4,13 @@ export type TopbarButtonOptions =
   | "Audience Data"
   | "Programming Assist";
 
-export type TableHeaderType = {};
+export type PlayLogDataType = {
+  rank: number;
+  title: string;
+  mm_song_id: string;
+  artists_name: string;
+  total_plays: string;
+  first_play: string;
+  last_play: string;
+  total_play_duration_mins: string;
+};
