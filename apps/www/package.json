@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "dotenv": "^16.4.7",
+    "jotai": "^2.10.3",
     "next": "14.2.8",
     "react": "catalog:react18",
     "react-dom": "catalog:react18"
