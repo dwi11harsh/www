@@ -1,5 +1,5 @@
 import { atom } from "jotai";
-import { TopbarButtonOptions } from "@repo/ui";
+import { PlayLogDataType, TopbarButtonOptions } from "@repo/ui";
 
 export const RadioStationAtom = atom<
   "THE TOON - NEWCASTLE AND GATESHEAD MULTIPLEX" | null
@@ -24,3 +24,5 @@ export const TableHeadersAtom = atom((get) => {
     return ["Song", "Artist", "Time of Play", "First Play", "No. of Plays"];
   }
 });
+
+export const PlayLogDataAtom = atom<PlayLogDataType[] | null>(null);

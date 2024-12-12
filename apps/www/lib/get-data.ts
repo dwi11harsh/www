@@ -8,7 +8,7 @@ export const GetPlayLogData = async () => {
   const uri = process.env.BACKEND_URI;
   const todays_date = new Date().toISOString().split("T")[0] as string;
 
-  const playLog = await fetch(
+  const playLog: Response = await fetch(
     `${uri}/user/songs?f_date=2023-12-01&t_date=${todays_date}`,
     {
       method: "GET",
