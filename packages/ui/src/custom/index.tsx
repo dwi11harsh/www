@@ -6,3 +6,4 @@ export * from "./current-table-name";
 export * from "./staticbar";
 export * from "./table";
 export * from "./searchbar";
+export * from "./right-drawer";

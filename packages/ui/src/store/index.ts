@@ -14,6 +14,9 @@ export const RadioStationAtom = atom<
 // Name of Table currently selected
 export const CurrentTableAtom = atom<TopbarButtonOptions>("Receiver Data");
 
+// right drawer state
+export const DrawerStateAtom = atom<boolean>(false);
+
 // Search String for Search Bar
 export const SearchStringAtom = atom<string>("");
 
