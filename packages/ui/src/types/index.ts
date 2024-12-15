@@ -14,3 +14,12 @@ export type PlayLogDataType = {
   last_play: string;
   total_play_duration_mins: string;
 };
+
+export type ReceiverDataType = {
+  unit_no: string;
+  postcode: string;
+  status: boolean;
+  last_broadcast: string;
+  transmission_strength: 0 | 1 | 2 | 3 | 4 | 5;
+  listening_time: string;
+};

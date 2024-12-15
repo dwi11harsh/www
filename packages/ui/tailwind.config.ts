@@ -80,7 +80,23 @@ const config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate, addVariablesForColors],
+  plugins: [
+    tailwindcssAnimate,
+    addVariablesForColors,
+    function ({ addUtilities }: { addUtilities: any }) {
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
+        },
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+        },
+      };
+
+      addUtilities(newUtilities);
+    },
+  ],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {

@@ -2,8 +2,8 @@ import { SearchBar, Staticbar, TableBody, TableHeader, Topbar } from "@repo/ui";
 import { DatePickerWithRange } from "@repo/ui/components/ui/date-range-picker";
 import { GetPlayLogData } from "~/lib/get-data";
 
-export default function Page() {
-  const data = GetPlayLogData();
+const HomePage = async () => {
+  const data = await GetPlayLogData();
   return (
     <main>
       <Topbar />
@@ -18,9 +18,11 @@ export default function Page() {
         {/* for table */}
         <div>
           <TableHeader />
-          <TableBody data />
+          <TableBody data={data} />
         </div>
       </div>
     </main>
   );
-}
+};
+
+export default HomePage;

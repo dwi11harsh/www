@@ -2,7 +2,6 @@
 
 import { cn } from "@repo/ui";
 import { CurrentTableAtom, TableHeadersAtom } from "@repo/ui/store";
-
 import { useAtomValue } from "jotai";
 
 export const TableHeader = () => {
